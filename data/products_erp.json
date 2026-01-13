@@ -1,0 +1,40 @@
+{
+    "date_generated": "2026-01-13T19:40:00Z",
+    "products": [
+        {
+            "ItemId": "5789",
+            "ItemName": "Laptop X1000",
+            "ItemDescription": "High-performance laptop with 16GB RAM and 512GB SSD.",
+            "ItemPrice": "600",
+            "ItemWholesalePrice": "500.00",
+            "ItemSku": "PROD-0001",
+            "ItemStock": "20"
+        },
+        {
+            "ItemId": "5790",
+            "ItemName": "Wireless Mouse",
+            "ItemDescription": "Ergonomic wireless mouse with adjustable DPI settings.",
+            "ItemPrice": "32.00",
+            "ItemWholesalePrice": "17.00",
+            "ItemSku": "PROD-0002",
+            "ItemStock": "30"
+        },
+        {
+            "ItemId": "5791",
+            "ItemName": "Bluetooth Headphones",
+            "ItemDescription": "Over-ear Bluetooth headphones with noise cancellation.",
+            "ItemPrice": "99.99",
+            "ItemWholesalePrice": "60.00",
+            "ItemSku": "PROD-0003",
+            "ItemStock": "150"
+        },
+        {
+            "id": "5792",
+            "name": "Problematic Data Product",
+            "description": "This product's data are okay in the ERP. It should not be updated by our prototype script.",
+            "price": null,
+            "sku": "PROD-0004",
+            "stock": 50
+        }
+    ]
+}

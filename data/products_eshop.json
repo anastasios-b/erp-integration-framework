@@ -1,0 +1,36 @@
+{
+    "products": [
+        {
+            "id": 8356,
+            "name": "Laptop X1000",
+            "description": "High-performance laptop with 16GB RAM and 512GB SSD.",
+            "price": 700.00,
+            "sku": "PROD-0001",
+            "stock": 45
+        },
+        {
+            "id": 8357,
+            "name": "Wireless Mouse",
+            "description": "Ergonomic wireless mouse with adjustable DPI settings.",
+            "price": 29.99,
+            "sku": "PROD-0002",
+            "stock": 12
+        },
+        {
+            "id": 8358,
+            "name": "Bluetooth Headphones",
+            "description": "Over-ear Bluetooth headphones with noise cancellation.",
+            "price": 89.99,
+            "sku": "PROD-0003",
+            "stock": 100
+        },
+        {
+            "id": 8359,
+            "name": "Problematic Data Product",
+            "description": "This product contains problematic data on purpose, to demonstrate the safe handling and logging of our prototype script.",
+            "price": 15.00,
+            "sku": "PROD-0004",
+            "stock": 0
+        }
+    ]
+}
