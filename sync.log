@@ -1,8 +1,4 @@
-2026-01-13 21:24:08,321 - INFO - Starting ERP to Eshop product sync
-2026-01-13 21:24:08,321 - WARNING - Product with SKU PROD-0004 found in Eshop but missing in ERP
-2026-01-13 21:24:08,321 - INFO - Successfully synced 3 products to synced_from_erp.json
-2026-01-13 21:24:08,321 - INFO - Sync completed successfully. Processed 3 products.
-2026-01-13 21:27:00,706 - INFO - Starting ERP to Eshop product sync
-2026-01-13 21:27:00,707 - WARNING - Product with SKU PROD-0004 found in Eshop but missing in ERP
-2026-01-13 21:27:00,707 - INFO - Successfully synced 3 products to synced_from_erp.json
-2026-01-13 21:27:00,707 - INFO - Sync completed successfully. Processed 3 products.
+2026-01-15 02:00:25,479 - INFO - Starting ERP to Eshop product sync
+2026-01-15 02:00:25,479 - WARNING - Product with SKU PROD-0004 found in Eshop but missing in ERP
+2026-01-15 02:00:25,479 - INFO - Successfully synced 3 products to synced_from_erp.json
+2026-01-15 02:00:25,479 - INFO - Sync completed successfully. Processed 3 products.

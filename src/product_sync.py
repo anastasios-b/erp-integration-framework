@@ -13,12 +13,27 @@ class ProductSync:
     """Orchestrates the product synchronization process"""
     
     def __init__(self, config: Dict[str, Any]):
+        """Initialize ProductSync with configuration
+        
+        Args:
+            config: Dictionary containing sync configuration including file paths,
+                   field mappings, and validation rules
+        """
         self.config = config
         self.data_loader = DataLoader(config["LOG_FILE"])
         self.validator = ProductValidator(config["VALIDATION_RULES"])
         
     def sync_products(self) -> List[Dict[str, Any]]:
-        """Main sync process - returns list of successfully synced products"""
+        """Main sync process - returns list of successfully synced products
+        
+        Returns:
+            List of products that were successfully synced and validated
+            
+        Raises:
+            FileNotFoundError: If data files are not found
+            ValueError: If data validation fails
+            json.JSONDecodeError: If JSON parsing fails
+        """
         
         # Load data
         erp_products = self.data_loader.load_erp_products(self.config["ERP_DATA_FILE"])
@@ -72,7 +87,16 @@ class ProductSync:
         return updated_eshop_products
     
     def _find_matching_erp_product(self, erp_products: List[Dict[str, Any]], sku: str, identifier_field: str) -> Dict[str, Any]:
-        """Find ERP product matching the given SKU"""
+        """Find ERP product matching the given SKU
+        
+        Args:
+            erp_products: List of ERP product dictionaries
+            sku: SKU to search for
+            identifier_field: Field name containing the SKU in ERP products
+            
+        Returns:
+            Matching ERP product dictionary or None if not found
+        """
         return next(
             (erp_product for erp_product in erp_products 
              if erp_product.get(identifier_field) == sku),
@@ -80,7 +104,14 @@ class ProductSync:
         )
     
     def save_synced_products(self, products: List[Dict[str, Any]]):
-        """Save successfully synced products to output file"""
+        """Save successfully synced products to output file
+        
+        Args:
+            products: List of validated and synced product dictionaries
+            
+        Note:
+            Logs success but continues execution if file write fails
+        """
         try:
             with open(self.config["OUTPUT_FILE"], "w", encoding="utf-8") as outfile:
                 json.dump(products, outfile, indent=4, ensure_ascii=False)

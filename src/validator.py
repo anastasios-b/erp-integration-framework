@@ -11,7 +11,14 @@ class ProductValidator:
         self.validation_rules = validation_rules
     
     def validate_product(self, product: Dict[str, Any]) -> List[str]:
-        """Validate a single product and return list of errors"""
+        """Validate a single product and return list of errors
+        
+        Args:
+            product: Product dictionary to validate
+            
+        Returns:
+            List of validation error messages (empty if valid)
+        """
         errors = []
         
         # Check required fields
@@ -40,7 +47,14 @@ class ProductValidator:
         return errors
     
     def log_product_errors(self, product: Dict[str, Any], errors: List[str], start_timestamp: str, log_file: str):
-        """Log validation errors for a product"""
+        """Log validation errors for a product
+        
+        Args:
+            product: Product dictionary that failed validation
+            errors: List of validation error messages
+            start_timestamp: Timestamp for the sync operation
+            log_file: Path to the log file
+        """
         with open(log_file, "a", encoding="utf-8") as log:
             log.write(f"[ERP to Eshop at {start_timestamp}] Product with Eshop ID {product.get('id')} could not be updated due to these errors:\n")
             for error in errors:

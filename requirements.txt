@@ -1,0 +1,15 @@
+# Testing framework
+pytest>=7.0.0
+
+# Coverage reporting
+pytest-cov>=4.0.0
+
+# Type checking (optional but recommended)
+mypy>=1.0.0
+
+# Code formatting (optional but recommended)
+black>=22.0.0
+isort>=5.10.0
+
+# Linting (optional but recommended)
+flake8>=5.0.0

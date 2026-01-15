@@ -3,18 +3,33 @@ Field mapping and type conversion utilities
 """
 
 import logging
-from typing import Dict, Any, List
+from typing import Dict, Any
 
 class FieldMapper:
     """Handles field mapping and type conversion between ERP and Eshop"""
     
     def __init__(self, field_mappings: Dict[str, str], erp_field_types: Dict[str, str], eshop_field_types: Dict[str, str]):
+        """Initialize FieldMapper with configuration
+        
+        Args:
+            field_mappings: Dictionary mapping ERP field names to Eshop field names
+            erp_field_types: Dictionary of ERP field types
+            eshop_field_types: Dictionary of Eshop field types
+        """
         self.field_mappings = field_mappings
         self.erp_field_types = erp_field_types
         self.eshop_field_types = eshop_field_types
     
     def cast_to_eshop_type(self, value: Any, eshop_field: str) -> Any:
-        """Cast a value to the expected Eshop field type"""
+        """Cast a value to the expected Eshop field type
+        
+        Args:
+            value: Value to cast
+            eshop_field: Target field name in Eshop format
+            
+        Returns:
+            Value cast to the appropriate type, or original value if casting fails
+        """
         if value is None:
             return None
             
@@ -40,7 +55,15 @@ class FieldMapper:
             return value  # fallback if conversion fails
     
     def map_product_fields(self, erp_product: Dict[str, Any], eshop_product: Dict[str, Any]) -> Dict[str, Any]:
-        """Map fields from ERP product to Eshop product format"""
+        """Map fields from ERP product to Eshop product format
+        
+        Args:
+            erp_product: Source product data from ERP
+            eshop_product: Target product data from Eshop (preserves unmapped fields)
+            
+        Returns:
+            Product dictionary with fields mapped from ERP to Eshop format
+        """
         mapped_product = {}
         
         # Copy identifier fields
