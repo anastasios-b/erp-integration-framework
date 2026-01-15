@@ -214,8 +214,8 @@ This project is open source and available under the MIT License.
 
 ## 🔗 Links
 
-- **GitHub Repository**: https://github.com/anastasios-b/erp-integration-framework
 - **Issues**: https://github.com/anastasios-b/erp-integration-framework/issues
+- **Creator's Portfolio**: https://anastasios-bolkas.tech
 
 ---
 
