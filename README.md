@@ -28,7 +28,7 @@ This framework establishes ERP as the single source of truth for product informa
 ERP Data → Validation → Field Mapping → Eshop Update → Logging
 ```
 
-## 📋 Data Structures
+## Data Structures
 
 ### ERP Product Format
 ```json
