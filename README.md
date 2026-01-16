@@ -2,7 +2,7 @@
 
 A Python framework demonstrating robust product data synchronization between ERP systems and e-commerce platforms with comprehensive error handling, validation, and testing.
 
-## 🚀 Overview
+## Overview
 
 This framework establishes ERP as the single source of truth for product information, synchronizing prices, stock levels, and descriptions to e-commerce platforms while implementing enterprise-grade error handling and data validation.
 
