@@ -6,16 +6,16 @@ A Python framework demonstrating robust product data synchronization between ERP
 
 This framework establishes ERP as the single source of truth for product information, synchronizing prices, stock levels, and descriptions to e-commerce platforms while implementing enterprise-grade error handling and data validation.
 
-## ✨ Key Features
+## Key Features
 
-- 🛡️ **Data Integrity**: Comprehensive validation rules ensuring data quality
-- 🔄 **Graceful Error Handling**: Detailed logging with recovery mechanisms
-- 📊 **Modular Architecture**: Clean separation of concerns for maintainability
-- 🧪 **Comprehensive Testing**: 30+ test cases ensuring reliability
-- ⚡ **Production-Ready Patterns**: Scalable design for enterprise integration
-- 📝 **Detailed Logging**: Full audit trails for debugging and monitoring
+- **Data Integrity**: Comprehensive validation rules ensuring data quality
+- **Graceful Error Handling**: Detailed logging with recovery mechanisms
+- **Modular Architecture**: Clean separation of concerns for maintainability
+- **Comprehensive Testing**: 30+ test cases ensuring reliability
+- **Production-Ready Patterns**: Scalable design for enterprise integration
+- **Detailed Logging**: Full audit trails for debugging and monitoring
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 - **DataLoader**: JSON file loading with error handling
@@ -70,7 +70,7 @@ ERP Data → Validation → Field Mapping → Eshop Update → Logging
 | ItemDescription | description | Product description |
 | ItemStock | stock | Stock quantity |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.7+
@@ -103,7 +103,7 @@ python3 -m unittest tests.test_product_sync
 python3 -m unittest tests.test_validator
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 erp-integration-framework/
@@ -132,12 +132,12 @@ erp-integration-framework/
     └── test_sync.py          # Legacy tests
 ```
 
-## 📊 Output Files
+## Output Files
 
 - `synced_from_erp.json`: Successfully synchronized products
 - `sync.log`: Comprehensive logging with timestamps and error details
 
-## 🔧 Configuration
+## Configuration
 
 ### Validation Rules
 ```python
@@ -158,7 +158,7 @@ FIELD_MAPPINGS = {
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 The framework includes comprehensive test coverage:
 
@@ -174,7 +174,7 @@ The framework includes comprehensive test coverage:
 - Sync orchestration
 - Error handling
 
-## ⚠️ Current Limitations
+## Current Limitations
 
 - **Prototype Implementation**: Uses local JSON files instead of live APIs
 - **One-way Sync**: ERP → Eshop only (no bidirectional sync)
@@ -182,7 +182,7 @@ The framework includes comprehensive test coverage:
 - **Manual Execution**: No automated scheduling
 - **Basic Recovery**: Limited retry mechanisms
 
-## 🚀 Production Roadmap
+## Production Roadmap
 
 ### Immediate Enhancements
 - [ ] Real API integration (REST/GraphQL)
@@ -199,7 +199,7 @@ The framework includes comprehensive test coverage:
 - [ ] Performance optimization for large datasets
 - [ ] Multi-tenant support
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 - Fork the repository
@@ -208,11 +208,11 @@ Contributions are welcome! Feel free to:
 - Suggest improvements
 - Help evolve this into a production-grade solution
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🔗 Links
+## Links
 
 - **Issues**: https://github.com/anastasios-b/erp-integration-framework/issues
 - **Creator's Portfolio**: https://anastasios-bolkas.tech
