@@ -11,6 +11,7 @@ This framework establishes ERP as the single source of truth for product informa
 - **Data Integrity**: Comprehensive validation rules ensuring data quality
 - **Graceful Error Handling**: Detailed logging with recovery mechanisms
 - **Modular Architecture**: Clean separation of concerns for maintainability
+- **Single File Solution**: All-in-one script for quick deployment and testing
 - **Comprehensive Testing**: 30+ test cases ensuring reliability
 - **Production-Ready Patterns**: Scalable design for enterprise integration
 - **Detailed Logging**: Full audit trails for debugging and monitoring
@@ -90,6 +91,9 @@ pip install -r requirements.txt
 ```bash
 # Basic sync operation
 python main.py
+
+# Single-file version (all-in-one solution)
+python single_file_script.py
 ```
 
 ### Running Tests
@@ -109,6 +113,7 @@ python3 -m unittest tests.test_validator
 erp-integration-framework/
 ├── README.md                 # This file
 ├── main.py                   # Application entry point
+├── single_file_script.py     # All-in-one single file solution
 ├── requirements.txt           # Python dependencies
 ├── .gitignore               # Git ignore patterns
 ├── config/
@@ -134,8 +139,10 @@ erp-integration-framework/
 
 ## Output Files
 
-- `synced_from_erp.json`: Successfully synchronized products
-- `sync.log`: Comprehensive logging with timestamps and error details
+- `synced_from_erp.json`: Successfully synchronized products (from main.py)
+- `single_file_synced_from_erp.json`: Successfully synchronized products (from single_file_script.py)
+- `sync.log`: Comprehensive logging with timestamps and error details (from main.py)
+- `single_file_sync.log`: Comprehensive logging with timestamps and error details (from single_file_script.py)
 
 ## Configuration
 
